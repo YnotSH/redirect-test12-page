@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>載入中...</title>
+    <script>
+        function redirect() {
+            // 先在新分頁開啟分潤網址，確保記錄成功
+            window.open("https://don1donshop.easy.co/?ref=TEST12", "_blank");
+
+            // 2 秒後跳轉到商品頁
+            setTimeout(function() {
+                window.location.href = "https://don1donshop.easy.co/collections/lavons-%E6%9C%97%E6%B3%95";
+            }, 2000);
+        }
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p>載入中，請稍候...</p>
+</body>
+</html>
